@@ -1,0 +1,7 @@
+[
+	{"ID":0,"text":"Estudiar Platzi React","state":"NOT COMPLETED"},
+	{"ID":1,"text":"Lavar casa de patos","state":"NOT COMPLETED"},
+	{"ID":2,"text":"Leer libro","state":"NOT COMPLETED"},
+	{"ID":3,"text":"Hacer duolingo","state":"NOT COMPLETED"},
+	{"ID":4,"text":"Hacer Aseo a cuarto","state":"COMPLETED"}
+]
