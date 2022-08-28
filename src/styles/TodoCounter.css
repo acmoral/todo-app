@@ -1,0 +1,12 @@
+h2{
+    text-align: center;
+    padding:20px;
+    font-size:50px;
+    font-weight: 600;
+    margin: 0;
+    background-image:radial-gradient(ellipse,#8425b9, #fbd155);
+    color: transparent;
+    background-clip: text;
+    height: 15vh;
+    -webkit-background-clip: text;
+}

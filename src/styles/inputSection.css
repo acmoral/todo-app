@@ -1,0 +1,9 @@
+.input-section{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 5px;
+    align-items: center;
+    width: 50vw;
+    font-family: ubuntu;
+}
+

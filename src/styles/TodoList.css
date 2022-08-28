@@ -1,0 +1,19 @@
+.TodoList{
+    list-style:none;
+    overflow-y:auto;
+    width: 35vw;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: #8124b765 2px 5px 19px; 
+    padding-right:10px;
+    padding-left: 0;
+    border-radius: 10px;
+}
+::-webkit-scrollbar {
+    background: white;
+    width: 6px;    
+  }
+::-webkit-scrollbar-thumb {
+    background: #8224b7;
+    border-radius: 5px;
+  }

@@ -1,0 +1,12 @@
+.TodoSearch{
+    border-radius: 10px;
+    width: 30vw;
+    height: 30px;
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: #8124b765 2px 5px 19px;
+    text-align: center;
+}
+.TodoSearch:focus{
+    outline: #fbd155 solid;
+}

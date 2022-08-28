@@ -1,7 +1,12 @@
 [
-	{"ID":0,"text":"Estudiar Platzi React","state":"NOT COMPLETED"},
-	{"ID":1,"text":"Lavar casa de patos","state":"NOT COMPLETED"},
-	{"ID":2,"text":"Leer libro","state":"NOT COMPLETED"},
-	{"ID":3,"text":"Hacer duolingo","state":"NOT COMPLETED"},
-	{"ID":4,"text":"Hacer Aseo a cuarto","state":"COMPLETED"}
+	{"ID":0,"text":"Estudiar Platzi React","state":"NOT-COMPLETED"},
+	{"ID":1,"text":"Lavar casa de patos","state":"NOT-COMPLETED"},
+	{"ID":2,"text":"Leer libro","state":"NOT-COMPLETED"},
+	{"ID":3,"text":"Hacer duolingo","state":"NOT-COMPLETED"},
+	{"ID":4,"text":"Hacer Aseo a cuarto","state":"COMPLETED"},
+	{"ID":5,"text":"Desayunar","state":"COMPLETED"},
+	{"ID":6,"text":"Correr","state":"NOT-COMPLETED"},
+	{"ID":7,"text":"Escribir historia","state":"NOT-COMPLETED"},
+	{"ID":8,"text":"Terminar Qgis project","state":"NOT-COMPLETED"},
+	{"ID":9,"text":"Hablar por teléfono","state":"NOT-COMPLETED"}
 ]

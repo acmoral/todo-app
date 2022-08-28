@@ -1,0 +1,21 @@
+.TodoItem-COMPLETED{
+    object-fit: contain;
+    display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom:5px ;
+    margin-left: 2px;
+    text-decoration:line-through;
+}
+.TodoItem-NOT-COMPLETED{
+    object-fit: contain;
+    display: flex;
+    justify-content:space-between;
+    font-size: 20px;
+    margin-left: 2px;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom:5px ;
+}

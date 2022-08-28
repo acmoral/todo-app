@@ -1,5 +1,5 @@
 import React from 'react';
-import './TodoCounter.css';
+import '../styles/TodoCounter.css';
 function countTasks(arr,equalto){
     const count = arr.filter(function(el){return el.state ==equalto;}).length;
     return count;

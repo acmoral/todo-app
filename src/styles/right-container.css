@@ -1,0 +1,12 @@
+.right-container{
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    color:#8224b7;
+    width:40vw;
+    align-items: center;
+    border-color: #fa812a;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(130,36,183,0.25) 0px 54px 55px, rgba(130,36,183, 0.12) 0px -12px 30px, rgba(130,36,183, 0.12) 0px 4px 6px, rgba(130,36,183, 0.17) 0px 12px 13px, rgba(130,36,183, 0.09) 0px -3px 5px;
+}
