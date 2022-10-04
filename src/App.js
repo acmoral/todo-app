@@ -1,16 +1,13 @@
 
 import React from 'react';
 import {TodoCounter} from './components/TodoCounter.js';
-import {TodoAddTask} from './components/TodoAddTask.js';
-import {TodoSearch} from './components/TodoSearch.js';
-import {TodoList} from './components/TodoList.js';
-import { CreateTodoButton } from './components/CreateTodoButton.js';
 import './styles/main.css'
 import "./styles/taskBar.css"
 import "./styles/inputSection.css"
 import "./styles/footer.css"
 import "./styles/right-container.css"
-
+import { MainTodo } from './components/MainTodo.js';
+import { FooterTodo } from './components/FooterTodo.js';
 function useLocalStorage(itemName, initialValue) {
   // Creamos el estado inicial para nuestros errores y carga
   const [error, setError] = React.useState(false);
@@ -77,30 +74,10 @@ function App() {
   let newTodos = todos.filter( element => element.text.toLowerCase().includes(searchValue.toLowerCase()));
   return (
     <React.Fragment>
-      <header>
+      
         <TodoCounter items={todos}/>
-      </header>
-      <main>
-      <div className='task-bar'>
-        <div className='input-section'>
-          <TodoAddTask valueToadd={valueToadd} setvalueToadd={setvalueToadd}/>
-          <CreateTodoButton setTodos={setTodos} todos={todos} setvalueToadd={setvalueToadd} valueToadd={valueToadd}/>
-        </div>    
-        <img src={require("./assets/girl.jpg")}/>
-      </div>
-      <div className='right-container'>
-        <TodoSearch 
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}/>
-        <TodoList todos={todos} newTodos = {newTodos} setTodos={setTodos}/>
-        {error && <p>Desespérate, hubo un error...</p>}
-        {loading && <p>Estamos cargando, no desesperes...</p>}
-        {(!loading && !todos.length) && <p>¡Crea tu primer TODO!</p>}
-      </div>
-      </main>
-      <footer>
-        <p>created by Andrea M.</p>
-      </footer>
+      <MainTodo loading={loading} error={error} valueToadd={valueToadd} setvalueToadd={setvalueToadd} setTodos={setTodos} searchValue={searchValue}  setSearchValue ={setSearchValue} newTodos={newTodos} todos={todos} />
+      <FooterTodo />
     </React.Fragment>
     );
    

@@ -6,7 +6,7 @@ function countTasks(arr,equalto){
 };
 function TodoCounter(props){
     return(
-        <h2> Haz completado {countTasks(props.items,'COMPLETED')} tareas de {props.items.length}</h2>
+        <header><h2> Haz completado {countTasks(props.items,'COMPLETED')} tareas de {props.items.length}</h2></header>
     );
 }
 
