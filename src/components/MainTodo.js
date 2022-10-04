@@ -3,7 +3,6 @@ import {TodoAddTask} from "./TodoAddTask";
 import {CreateTodoButton} from "./CreateTodoButton";
 import {TodoSearch} from "./TodoSearch";
 import {TodoList} from "./TodoList";
-
 function MainTodo({loading,error,valueToadd,setvalueToadd,setTodos,searchValue,setSearchValue,newTodos,todos}){
     return(
         <main>
