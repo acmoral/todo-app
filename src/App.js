@@ -10,12 +10,8 @@ import { FooterTodo } from './components/FooterTodo.js';
 import { TodoContext } from './components/TodoContext.js';
 import { TodoCounter } from './components/TodoCounter';
 function App() {
- 
-  return (
-    <React.Fragment>
-      <TodoContext.Consumer>
-      {({
-          loading,
+  const{
+      loading,
           error,
           todos,
           valueToadd,
@@ -24,8 +20,10 @@ function App() {
           setSearchValue,
           setTodos,
           newTodos,
-        }) => (
-        <><TodoCounter todos={todos} /><MainTodo
+  } = React.useContext(TodoContext);
+  return (
+    <React.Fragment>
+      <TodoCounter todos={todos} /><MainTodo
             loading={loading}
             error={error}
             valueToadd={valueToadd}
@@ -34,9 +32,7 @@ function App() {
             searchValue={searchValue}
             setSearchValue={setSearchValue}
             newTodos={newTodos}
-            todos={todos} /></>)}
-      </TodoContext.Consumer>
-        
+            todos={todos} />
       <FooterTodo />
     </React.Fragment>
     );

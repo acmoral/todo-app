@@ -1,7 +1,9 @@
 import React from 'react';
 import "../styles/CreateTodoButton.css";
+import { TodoContext } from './TodoContext';
 
-function CreateTodoButton({todos,setvalueToadd,setTodos,valueToadd}){
+function CreateTodoButton(){
+    const {todos,setvalueToadd,setTodos,valueToadd} = React.useContext(TodoContext);
     const onClickButton=()=>{
         let data = [...todos]
         const newTodo ={

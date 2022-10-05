@@ -1,7 +1,9 @@
 import React from 'react';
 import "../styles/TodoItem.css";
 import "../styles/listButtons.css";
+import { TodoContext } from './TodoContext';
 function TodoItem(props){
+    const {todos,setTodos} = React.useContext(TodoContext);
     const onComplete = () =>{
         const oldState =props.children.state;
         const newState = (status)=>{
@@ -11,16 +13,16 @@ function TodoItem(props){
                 return 'COMPLETED';
         }     
        };
-       let data = [...props.todos]
+       let data = [...todos]
        const objIndex = data.findIndex((obj => obj.ID == props.children.ID));
        data[objIndex].state = newState(oldState);
-       props.setTodos(data);
+       setTodos(data);
     }
     const Erase = () =>{
-       let data = [...props.todos]
+       let data = [...todos]
        const objIndex = data.findIndex((obj => obj.ID == props.children.ID));
        data.splice(objIndex,1);
-       props.setTodos(data);
+       setTodos(data);
     }
     return(
         <li className={`TodoItem-${props.children.state}`}>

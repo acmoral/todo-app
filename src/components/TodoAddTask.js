@@ -1,6 +1,8 @@
 import React from 'react';
 import "../styles/TodoAddTask.css";
-function TodoAddTask({valueToadd,setvalueToadd}){
+import { TodoContext } from './TodoContext';
+function TodoAddTask(){
+    const {valueToadd,setvalueToadd} = React.useContext(TodoContext);
     const changeValue= (event)=>{
         setvalueToadd(event.target.value)
     }

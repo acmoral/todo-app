@@ -8,16 +8,14 @@ function MainTodo({loading,error,valueToadd,setvalueToadd,setTodos,searchValue,s
         <main>
       <div className='task-bar'>
         <div className='input-section'>
-          <TodoAddTask valueToadd={valueToadd} setvalueToadd={setvalueToadd}/>
-          <CreateTodoButton setTodos={setTodos} todos={todos} setvalueToadd={setvalueToadd} valueToadd={valueToadd}/>
+          <TodoAddTask/>
+          <CreateTodoButton />
         </div>    
         <img src={require("../assets/girl.jpg")}/>
       </div>
       <div className='right-container'>
-        <TodoSearch 
-        searchValue={searchValue}
-        setSearchValue={setSearchValue}/>
-        <TodoList todos={todos} newTodos = {newTodos} setTodos={setTodos}/>
+        <TodoSearch />
+        <TodoList />
         {error && <p>Desespérate, hubo un error...</p>}
         {loading && <p>Estamos cargando, no desesperes...</p>}
         {(!loading && !todos.length) && <p>¡Crea tu primer TODO!</p>}
