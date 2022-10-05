@@ -5,5 +5,8 @@
     align-items: center;
     width: 50vw;
     font-family: ubuntu;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: #8124b765 2px 5px 19px; 
 }
 

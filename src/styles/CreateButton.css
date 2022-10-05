@@ -1,0 +1,12 @@
+.CreateButton{
+    width: fit-content;
+    position: absolute;
+    top:10px;
+    left:10px;
+    z-index: 2;
+    background-color: transparent;
+    border-radius: 150px;
+    margin: 0;
+    padding: 0;
+    box-shadow: 2px 2px 2px 1px #8124b765;
+}

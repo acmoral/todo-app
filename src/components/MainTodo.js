@@ -1,16 +1,19 @@
 import React from "react";
-import {TodoAddTask} from "./TodoAddTask";
 import {CreateTodoButton} from "./CreateTodoButton";
 import {TodoSearch} from "./TodoSearch";
 import {TodoList} from "./TodoList";
-function MainTodo({loading,error,valueToadd,setvalueToadd,setTodos,searchValue,setSearchValue,newTodos,todos}){
+import "../styles/CreateButton.css"
+function MainTodo({loading,error,todos}){
     return(
         <main>
+          <div className='CreateButton'>
+            <CreateTodoButton>
+              <span className="material-symbols-outlined" style={{fontSize: 100}}>
+                 add_circle
+              </span>
+            </CreateTodoButton>
+          </div>
       <div className='task-bar'>
-        <div className='input-section'>
-          <TodoAddTask/>
-          <CreateTodoButton />
-        </div>    
         <img src={require("../assets/girl.jpg")}/>
       </div>
       <div className='right-container'>

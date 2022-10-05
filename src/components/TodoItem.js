@@ -27,9 +27,15 @@ function TodoItem(props){
     return(
         <li className={`TodoItem-${props.children.state}`}>
             <button onClick={onComplete} className='listButtonsPlus' type='button'>
+            <span class="material-symbols-outlined">
+                check_circle
+            </span>
             </button>
             {props.children.text}
             <button onClick={Erase} className='listButtonsMinus' type='button'>
+            <span class="material-symbols-outlined">
+                delete
+            </span>
             </button>
         </li>
     )

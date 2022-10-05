@@ -14,6 +14,7 @@ function TodoProvider(props) {
   } = useLocalStorage('TODOS_V2', []);
   const [valueToadd,setvalueToadd] = React.useState('');
   const [searchValue,setSearchValue]=React.useState('');
+  const [openModal,setOpenModal] = React.useState(false);
   let newTodos = todos.filter( element => element.text.toLowerCase().includes(searchValue.toLowerCase()));
   // Retornamos nuestro proveedor con nuestro contexto en la etiqueta value, que recibirá a toda nuestra aplicación, por eso necesitamos la prop children
   return (
@@ -27,6 +28,8 @@ function TodoProvider(props) {
       setSearchValue,
       setTodos,
       newTodos,
+      openModal,
+      setOpenModal,
     }}>
       {props.children}
     </TodoContext.Provider>
